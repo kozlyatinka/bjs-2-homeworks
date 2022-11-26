@@ -6,7 +6,7 @@ function solveEquation(a, b, c) {
   let d = Math.pow(b, 2) - 4*a*c;
   if (d < 0) {
     arr = [];
-  } else if (d = 0) {
+  } else if (d == 0) {
     firstRoot = -b/2*a;
     arr.push(firstRoot);
   } else {
@@ -16,7 +16,7 @@ function solveEquation(a, b, c) {
   }
   return arr;
 }
-solveEquation(1, 2, 3)
+solveEquation(1, 2, 3);
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   
