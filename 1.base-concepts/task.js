@@ -1,22 +1,20 @@
 "use strict"
 function solveEquation(a, b, c) {
   let arr = [];
-  let firstRoot;
-  let secondRoot;
   let d = Math.pow(b, 2) - 4*a*c;
+  document.writeln(d);
   if (d < 0) {
     arr = [];
   } else if (d == 0) {
-    firstRoot = -b/2*a;
-    arr.push(firstRoot);
+    arr.push(-b / 2 * a);
   } else {
-    firstRoot = (-b + Math.sqrt(d))/(2*a);
-    secondRoot = (-b - Math.sqrt(d))/(2*a);
-    arr.push(firstRoot, secondRoot);
+    arr.push((-b + Math.sqrt(d))/(2*a));
+    arr.push((-b - Math.sqrt(d))/(2*a));
   }
   return arr;
 }
-solveEquation(1, 2, 3);
+
+document.writeln(solveEquation(10, 25, 3));
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   
