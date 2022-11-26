@@ -12,10 +12,11 @@ function solveEquation(a, b, c) {
   } else {
     firstRoot = (-b + Math.sqrt(d))/(2*a);
     secondRoot = (-b - Math.sqrt(d))/(2*a);
-    arr.push(firstRoot, secondRoot)
+    arr.push(firstRoot, secondRoot);
   }
   return arr;
 }
+solveEquation(1, 2, 3)
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   
